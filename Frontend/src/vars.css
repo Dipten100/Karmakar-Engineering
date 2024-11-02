@@ -1,0 +1,15 @@
+:root{
+    /* color */
+    --primary-color:#B87333;
+    --secondary-color:#B5C0C9;
+    --primary-text-color:#ffffff;
+    --container-color:#b8733342;
+    --shadow-color:#B87333;
+    --start-glow-color:#ffe234;
+    --registration-btn-hover-color:#66ff66;
+
+    /* Font familes */
+    --primary-font-family-1: "Roboto Slab", serif;
+    --special-font-family-2: "Montserrat", sans-serif;
+    --special-font-family-3: "JetBrains Mono", monospace;
+}

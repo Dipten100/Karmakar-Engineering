@@ -1,0 +1,174 @@
+.show-product-section {
+  .container {
+    .row {
+      .col-12 {
+        .add-butn {
+          text-align: center;
+        }
+        .show-products {
+          display: grid;
+          grid-gap: 2rem;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}
+
+// product add style & Product edit style
+.add-product,
+.edit-product-section {
+  .container {
+    .row {
+      .col-12 {
+        form {
+          &.product-add-form,
+          &.edit-product-form {
+            .form-input {
+              width: 100%;
+              margin: 1rem 0;
+              padding: 1rem;
+              label {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: 700;
+                opacity: 80%;
+                margin: 0 0 1rem 0;
+              }
+              input[type="text"],
+              textarea {
+                padding: 0.3rem 0.5rem;
+                font-size: 1.5rem;
+                width: 100%;
+                border: none;
+                outline: none;
+                border: 3px solid transparent;
+                border-bottom: 3px solid var(--primary-color);
+              }
+            }
+            .form-output-img {
+              display: grid;
+              grid-gap: 1rem;
+              grid-template-columns: repeat(2, 1fr);
+              .img-details {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 0 1rem;
+                background: var(--container-color);
+                border-radius: 1rem;
+                img {
+                  width: 8rem;
+                }
+                .text {
+                  font-size: 1.3rem;
+                  font-weight: 700;
+                  width: 100%;
+                }
+              }
+            }
+            .form-multiple-input {
+              width: 100%;
+              margin: 1rem 0;
+              padding: 1rem;
+              label {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: 700;
+                opacity: 80%;
+                margin: 0 0 1rem 0;
+              }
+              .key-value-pair {
+                input[type="text"] {
+                  padding: 0.3rem 0.5rem;
+                  font-size: 1.5rem;
+                  border: none;
+                  outline: none;
+                  border: 3px solid transparent;
+                  border-bottom: 3px solid var(--primary-color);
+                  margin: 0 1rem 0 0;
+                }
+              }
+            }
+            .form-output-reviews {
+              width: 100%;
+              margin: 1rem 0;
+              padding: 1rem;
+              label {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: 700;
+                opacity: 80%;
+                margin: 0 0 1rem 0;
+              }
+              .review-section {
+                height: 500px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                .review {
+                  border: 1px solid var(--primary-color);
+                  margin: 0 0 1rem 0;
+                  padding: 1rem;
+                  display: flex;
+                  .review-img{
+                    display: flex;
+                    img{
+                      width: 5rem;
+                    }
+                  }
+                  .review-body {
+                    margin: 0 0 0 1rem;
+                    width: 100%;
+                    .review-name {
+                      margin: 0 0 1rem 0;
+                      p {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        opacity: 80%;
+                        color: var(--primary-color);
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                      }
+                    }
+                    .review-comments {
+                      font-size: 1.2rem;
+                      font-weight: 500;
+                      opacity: 80%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// product-card style
+.product-card {
+  padding: 0.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  .product-img {
+    img {
+      border-radius: 0.5rem;
+    }
+  }
+  .product-title {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    opacity: 80%;
+  }
+  .butns {
+    text-align: center;
+    display: grid;
+    grid-gap: 0 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

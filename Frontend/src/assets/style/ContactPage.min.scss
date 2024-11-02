@@ -1,0 +1,206 @@
+.contact-section {
+  .container {
+    .row {
+      .contact-details {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        .left-portion {
+          background: var(--primary-color);
+          color: var(--primary-text-color);
+          opacity: 80%;
+          padding: 2rem;
+          font-size: 1.1rem;
+          .heading {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+          }
+          .short-text {
+            margin: 0 0 1rem 0;
+          }
+          .company-details {
+            .details {
+              display: flex;
+              margin: 0 0 1rem 0;
+              align-items: center;
+              .icon {
+                margin: 0 1rem 0 0;
+                padding: 0.35rem 0.75rem;
+                text-align: center;
+                border: 1px solid var(--primary-text-color);
+                border-radius: 50%;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+        .right-portion {
+          width: 100%;
+          padding: 2rem;
+          .heading {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0 0 3rem 0;
+          }
+          form{
+            &.contact-form{
+                .form-input-multiple-feild {
+                  display: flex;
+                  margin: 0 0 1rem 0;
+                  .feild {
+                    margin: 0 1rem 0 0;
+                    width: 100%;
+                    label {
+                      display: block;
+                      text-transform: uppercase;
+                      font-weight: 500;
+                    }
+                    input {
+                      width: 100%;
+                      padding: 0.3rem 0.2rem;
+                      font-size: 1.1rem;
+                      border: none;
+                      border-bottom: 3px solid rgba(0, 0, 0, 0.295);
+                      outline: none;
+                      &:focus {
+                        border-bottom: 3px solid var(--primary-color);
+                        color: var(--primary-color);
+                      }
+                    }
+                  }
+                }
+                .form-input {
+                  margin: 0 0 1rem 0;
+                  width: 100%;
+                  label {
+                    display: block;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                  }
+                  input,textarea {
+                      width: 100%;
+                      padding: 0.3rem 0.2rem;
+                      font-size: 1.1rem;
+                      border: none;
+                      border-bottom: 3px solid rgba(0, 0, 0, 0.295);
+                      outline: none;
+                      &:focus {
+                        border-bottom: 3px solid var(--primary-color);
+                        color: var(--primary-color);
+                      }
+                    }
+                    textarea{
+                      height: 150px;
+                    }
+                }
+            }
+          }
+        }
+      }
+      .comnpany-social-media{
+        margin: 2rem 0 0 0;
+        position: relative;
+        .social-links{
+            display: flex;
+            justify-content: center;
+            .links{
+                font-size: 3rem;
+                color: var(--primary-color);
+                margin: 0 1rem 0 0;
+                cursor: pointer;
+                transition: 0.3s;
+                &:last-child{
+                    margin: 0;
+                }
+                &:hover{
+                    opacity: 80%;
+                    transform: translate(0, -10px);
+                }
+            }
+        }
+      }
+    }
+  }
+}
+
+// Responsive style
+// Screen width smaler than 600px
+@media (max-width: 600px) {
+    .contact-section{
+        .container{
+            .row{
+                .contact-details{
+                    .left-portion{
+                        .company-details{
+                            .details{
+                                display: block;
+                                text-align: center;
+                                .icon{
+                                    margin: 0 0 1rem 0;
+                                    display: inline;
+                                }
+                                .text{
+                                    margin: 1rem 0 0 0;
+                                }
+                            }
+                        }
+                    }
+                    .right-portion{
+                        form{
+                            &.contact-form{
+                                .form-input-multiple-feild{
+                                    display: block;
+                                    .feild{
+                                        margin: 0 0 1rem 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Screen width smaler than 1000px
+@media (max-width: 1000px) {
+    .contact-section{
+        .container{
+            .row{
+                .contact-details{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Screen width larger than 1000px and smaller than 1200px
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .contact-section{
+        .container{
+            .row{
+                .contact-details{
+                    .right-portion{
+                        form{
+                            &.contact-form{
+                                .form-input-multiple-feild{
+                                    display: block;
+                                    .feild{
+                                        margin: 0 0 1rem 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Screen width larger than 1200px
+@media (min-width: 1200px) {}

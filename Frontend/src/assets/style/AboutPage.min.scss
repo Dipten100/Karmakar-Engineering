@@ -1,0 +1,154 @@
+.about-section {
+  .container {
+    .row {
+      .col-12 {
+        .heading {
+          font-size: 3rem;
+          font-weight: 700;
+          color: var(--primary-color);
+          opacity: 80%;
+        }
+        .top-portion {
+          display: flex;
+          margin: 2rem 0;
+          .top-left {
+            margin: 0 2.5rem 0 0;
+            width: 50%;
+            img {
+              width: 100%;
+              border-radius: 2rem;
+            }
+          }
+          .top-right {
+            width: 100%;
+            .title {
+              font-size: 2.5rem;
+              font-weight: 700;
+              color: var(--primary-color);
+            }
+            .details {
+              font-size: 1.5rem;
+              font-weight: 500;
+              opacity: 80%;
+            }
+          }
+        }
+        .bottom-portion {
+          .team {
+            display: grid;
+            grid-gap: 6rem 2rem;
+            margin: 4rem 0 0 0;
+            .team-member {
+              background: var(--container-color);
+              border-radius: 2rem;
+              .member-img {
+                position: relative;
+                img {
+                  top: -3.5rem;
+                  right: 42.5%;
+                  position: absolute;
+                  width: 6rem;
+                  height: 6rem;
+                  border: 4px solid var(--primary-color);
+                  border-radius: 50%;
+                  padding: 0.5rem;
+                }
+              }
+              .member-talk {
+                padding: 3rem;
+                font-size: 1.3rem;
+                font-weight: 600;
+                opacity: 80%;
+                text-align: justify;
+                .disclaimer {
+                  margin: 2rem 0 0 0;
+                  text-align: right;
+                  font-size: 1.8rem;
+                  color: var(--primary-color);
+                  opacity: 1000%;
+                  line-height: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Screen larger than 900px? 1 column */
+@media (min-width: 900px) {
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Responsive style
+// Screen width smaler than 800px
+@media (max-width: 800px) {
+  .about-section {
+    .container {
+      .row {
+        .col-12 {
+          .top-portion {
+            display: block;
+            .top-left {
+              width: 100%;
+              margin: 0 0 2.5rem 0;
+            }
+            .top-right {
+              width: 100%;
+              .title {
+                font-size: 1.8rem;
+              }
+              .details {
+                font-size: 1rem;
+              }
+            }
+          }
+          .bottom-portion{
+            .team{
+                .team-member{
+                    .member-img{
+                        img{
+                            right: 35%;
+                        }
+                    }
+                    .member-talk{
+                        padding: 3rem 1rem;
+                    }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Screen width larger than 800px and smaller than 1200px
+@media (min-width: 800px) and (max-width: 1200px) {
+  .about-section {
+    .container {
+      .row {
+        .col-12 {
+          .top-portion {
+            .top-right {
+              .title {
+                font-size: 1.8rem;
+              }
+              .details {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Screen width larger than 1200px
+@media (min-width: 1200px) {
+}

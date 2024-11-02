@@ -1,0 +1,72 @@
+.set-section {
+  padding: 0;
+  margin: 2rem 0 0 400px;
+}
+
+// cursor pointer
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+// imgaes size fit
+.equal-images {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+// border none
+.border-none{
+  border: none;
+}
+
+// review start style
+.start-ratting {
+  display: flex;
+  gap: 0.5rem;
+  .start {
+    opacity: 80%;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 20px;
+    &.glow {
+      color: var(--primary-color);
+    }
+  }
+}
+
+// page-header style
+.page-header-section {
+  background: var(--container-color);
+  padding: 2rem 2rem 2rem 400px;
+  margin: 0 0 2rem 0;
+  .container {
+    .row {
+      .col-12 {
+        .page-header {
+          font-size: 2.5rem;
+          font-weight: 900;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+// butn css
+.butn {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all .5s ease;
+  border: none;
+  &:hover{
+    opacity: 80%;
+  }
+}

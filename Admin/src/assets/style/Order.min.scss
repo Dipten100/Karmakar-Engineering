@@ -1,0 +1,190 @@
+.order-section {
+  .container {
+    .row {
+      .col-12 {
+        .heading {
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin: 0 0 1rem 0;
+          color: var(--primary-color);
+          opacity: 80%;
+        }
+        .sorting-option {
+          margin: 0 0 2rem 0;
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-columns: repeat(3, 1fr);
+          .option {
+            label {
+              font-size: 1.5rem;
+              font-weight: 700;
+              width: 100%;
+              opacity: 80%;
+            }
+            input {
+              width: 100%;
+              padding: 0.5rem;
+              font-size: 1.5rem;
+            }
+            &.check-btn {
+              label {
+                width: auto;
+                margin: 0 1rem 0 0;
+              }
+              input {
+                width: auto;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .order-table-status {
+          margin: 0 0 2rem 0;
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-columns: repeat(3, 1fr);
+          .status {
+            span {
+              font-size: 1.5rem;
+              font-weight: 700;
+              width: 100%;
+              opacity: 80%;
+              margin: 0 1rem 0 0;
+            }
+          }
+        }
+        .order-table {
+          thead {
+            tr {
+              th {
+                span {
+                  &.sort {
+                    font-size: 2rem;
+                    cursor: pointer;
+                    margin: 0 0 0 1rem;
+                  }
+                }
+              }
+            }
+          }
+          .head-fixed {
+            position: sticky;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// modal style
+.modal {
+  .modal-body {
+    .order-id {
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    // Order details show in modal style
+    .order-pagination {
+      display: flex;
+      margin: 1rem 0;
+      .page {
+        margin: 0 0.5rem;
+        padding: 0.3rem 0.8rem;
+        border: 3px solid var(--primary-color);
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+        &.active {
+          background: var(--primary-color);
+          color: var(--secondary-color);
+        }
+      }
+    }
+    .order-body {
+      .order-details {
+        .order-title,
+        .order-images,
+        .order-description,
+        .order-qualities,
+        .order-quantity,
+        .order-price {
+          display: flex;
+          align-items: center;
+          margin: 1rem 0;
+          .heading {
+            font-size: 1.3rem;
+            font-weight: 700;
+            opacity: 80%;
+            margin: 0 2rem 0 0;
+          }
+          .text {
+            text-align: justify;
+          }
+        }
+        .order-qualities {
+          ul {
+            list-style: none;
+            padding: 0;
+            li {
+              padding: 0;
+              span {
+                font-size: 1.3rem;
+                &.key {
+                  font-weight: 700;
+                  padding: 0 1rem 0 0;
+                }
+              }
+            }
+          }
+        }
+        .order-price {
+          .text {
+            input[type="number"] {
+              font-size: 1.3rem;
+              padding: 0.5rem;
+              &::-webkit-outer-spin-button,
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Customer details show in modal style
+    .customer-details {
+      margin: 2rem 0;
+      .customer-name,
+      .customer-phone,
+      .customer-address,
+      .customer-pincode,
+      .customer-landmarks,
+      .customer-city,
+      .customer-state,
+      .customer-country {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        .heading {
+          font-weight: 700;
+          opacity: 80%;
+          width: 200px;
+          margin: 0 1rem 0 0;
+        }
+        div {
+          text-align: justify;
+          span {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

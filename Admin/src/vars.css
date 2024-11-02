@@ -1,0 +1,11 @@
+:root{
+    /* color */
+    --primary-color:#B87333;
+    --secondary-color:#ffffff;
+    --container-color:#b8733342;
+
+    /* Font familes */
+    --primary-font-family-1: "Roboto Slab", serif;
+    --special-font-family-1: "Montserrat", sans-serif;
+    --special-font-family-2: "JetBrains Mono", monospace;
+}
